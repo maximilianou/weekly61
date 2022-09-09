@@ -41,7 +41,6 @@ https://download.virtualbox.org/virtualbox/6.1.38/VirtualBox-6.1.38-153438-Linux
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Web3
     state Web3 {
         direction LR
         [*] --> Browser 
@@ -66,7 +65,6 @@ stateDiagram-v2
 
 ```
 stateDiagram-v2
-    [*] --> Web3
     state Web3 {
         direction LR
         [*] --> Browser 
