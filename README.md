@@ -40,49 +40,72 @@ https://download.virtualbox.org/virtualbox/6.1.38/VirtualBox-6.1.38-153438-Linux
 
 
 ```mermaid
-stateDiagram-v2
+stateDiagram-v1
+    [*] --> Web3
     state Web3 {
         direction LR
+        [*] --> Browser 
         state Browser {
             direction LR
-            [*] --> MetaMask
-            [*] --> Brave
+            MetaMask
+            Brave
+            MEW
         }
         Browser --> ENS
         Browser --> IPFS
         Browser --> Blockchain
-        state Blockchain {
+    }
+    state Blockchain {
+        state BlockchainLocal {
             direction LR
-            [*] --> EthereumMainnet
-            [*] --> EthereumTestnet
-            [*] --> Celo
-            [*] --> Polygon
+            Hardhat
         }
-        
-    }           
+        state BlockchainL1 {
+            direction LR
+            EthereumMainnet
+            EthereumTestnet
+        }
+        state BlockchainL2 {
+            direction LR
+            Celo
+            Polygon
+        }
+    }
+
 ```
 
 ``` 
-stateDiagram-v2
+stateDiagram-v1
+    [*] --> Web3
     state Web3 {
-       direction LR
-       state Browser {
+        direction LR
+        [*] --> Browser 
+        state Browser {
             direction LR
-            [*] --> MetaMask
-            [*] --> Brave
+            MetaMask
+            Brave
+            MEW
         }
         Browser --> ENS
         Browser --> IPFS
         Browser --> Blockchain
-        state Blockchain {
+    }
+    state Blockchain {
+        state BlockchainLocal {
             direction LR
-            [*] --> EthereumMainnet
-            [*] --> EthereumTestnet
-            [*] --> Celo
-            [*] --> Polygon
+            Hardhat
         }
-        
-    }           
+        state BlockchainL1 {
+            direction LR
+            EthereumMainnet
+            EthereumTestnet
+        }
+        state BlockchainL2 {
+            direction LR
+            Celo
+            Polygon
+        }
+    }
 ```
 
 
