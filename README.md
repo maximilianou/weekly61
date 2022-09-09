@@ -57,6 +57,7 @@ stateDiagram-v2
         state BlockchainLocal {
             direction LR
             Hardhat
+            Trufflesuite
         }
         state BlockchainL2 {
             direction LR
@@ -69,7 +70,6 @@ stateDiagram-v2
             EthereumTestnet
         }
     }
-
 ```
 
 ``` 
@@ -90,6 +90,7 @@ stateDiagram-v2
         state BlockchainLocal {
             direction LR
             Hardhat
+            Trufflesuite
         }
         state BlockchainL2 {
             direction LR
