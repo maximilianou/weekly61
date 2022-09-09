@@ -43,7 +43,6 @@ https://download.virtualbox.org/virtualbox/6.1.38/VirtualBox-6.1.38-153438-Linux
 stateDiagram-v2
     state Web3 {
         direction LR
-        [*] --> Browser 
         state Browser {
             direction LR
             [*] --> MetaMask
@@ -63,12 +62,11 @@ stateDiagram-v2
     }           
 ```
 
-```
+``` 
 stateDiagram-v2
     state Web3 {
-        direction LR
-        [*] --> Browser 
-        state Browser {
+       direction LR
+       state Browser {
             direction LR
             [*] --> MetaMask
             [*] --> Brave
