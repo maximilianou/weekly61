@@ -41,10 +41,8 @@ https://download.virtualbox.org/virtualbox/6.1.38/VirtualBox-6.1.38-153438-Linux
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Web3
     state Web3 {
         direction LR
-        [*] --> Browser 
         state Browser {
             direction LR
             MetaMask
@@ -60,26 +58,24 @@ stateDiagram-v2
             direction LR
             Hardhat
         }
-        state BlockchainL1 {
-            direction LR
-            EthereumMainnet
-            EthereumTestnet
-        }
         state BlockchainL2 {
             direction LR
             Celo
             Polygon
+        }
+        state BlockchainL1 {
+            direction LR
+            EthereumMainnet
+            EthereumTestnet
         }
     }
 
 ```
 
 ``` 
-stateDiagram-v1
-    [*] --> Web3
+stateDiagram-v2
     state Web3 {
         direction LR
-        [*] --> Browser 
         state Browser {
             direction LR
             MetaMask
@@ -95,15 +91,15 @@ stateDiagram-v1
             direction LR
             Hardhat
         }
-        state BlockchainL1 {
-            direction LR
-            EthereumMainnet
-            EthereumTestnet
-        }
         state BlockchainL2 {
             direction LR
             Celo
             Polygon
+        }
+        state BlockchainL1 {
+            direction LR
+            EthereumMainnet
+            EthereumTestnet
         }
     }
 ```
