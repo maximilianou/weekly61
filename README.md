@@ -186,7 +186,8 @@ DOING:
 TODO:
 ---
 
-- hardhat
+- hardhat - install EVM blockchain for Smart Contract in Solidity Local Network
+- wallets - create wallet for development only
 - 
 
 
