@@ -114,6 +114,13 @@ su -
 ..
 # apt install git
 ```
+> Git - Configure User and email
+```tsx
+$ git config --global user.name "Maximiliano Usich"
+$ git config --global user.email maximilianou@gmail.com
+```
+<https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+
 > Source Code Editor - vscode in this case.
 ```tsx
 # curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
