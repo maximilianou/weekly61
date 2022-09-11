@@ -72,7 +72,7 @@ stateDiagram-v2
     }
 ```
 
-``` 
+```tsx
 stateDiagram-v2
     state Web3 {
         direction LR
@@ -104,6 +104,25 @@ stateDiagram-v2
         }
     }
 ```
+> Git - source code version control manager / repository to interact with github
+```tsx
+su -
+..
+# apt install git
+```
+> Software Manager - Simplify searching and install permissions.
+```tsx
+# apt install snapd
+```
+> Browser web 3 compatible Web Browser
+```tsx
+$ snap install brave
+```
+> Code Editor - vscode today
+```tsx
+$ snap install code --classic
+```
+
 
 
 
